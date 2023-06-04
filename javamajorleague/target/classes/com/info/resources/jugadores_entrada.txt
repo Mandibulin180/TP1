@@ -1,0 +1,5 @@
+gonzalo;delgado;1.70F;delantero;100;10;true;19;
+jose;delgado;1.75F;defensor;40;10;false;27;
+luciano;godoy;1.85F;mediocampista;30;10;false;13;
+lucas;godoy;1.75F;defensor;30;10;false;26;
+alejandro;ortiz;1.60F;arquero;0;10;false;11;
