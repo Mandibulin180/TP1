@@ -15,14 +15,15 @@ public class BootstrapData {
     public static void initEquipos(){
             equipos = new HashMap<>();
             cargarEquipos(equipos);
-            System.out.println(equipos);
     }
 
     private static void cargarEquipos(Map<String,Equipo> equipos){
         List<Jugador> jugadores = new ArrayList<>();
-        equipos.put("equipo1", new Equipo("chacarita", LocalDate.of(1999, 01, 12),jugadores, entrenadoresEquipos.entrenador1));
-        equipos.put("equipo2", new Equipo("chasca", LocalDate.of(1990, 9, 21),jugadores, entrenadoresEquipos.entrenador2));
-        equipos.put("equipo3", new Equipo("rain", LocalDate.of(1940, 06, 19),jugadores, entrenadoresEquipos.entrenador3));
+        equipos.put("chacarita", new Equipo("chacarita", LocalDate.of(1999, 01, 12),jugadores, entrenadoresEquipos.entrenador1));
+        equipos.put("chasca", new Equipo("chasca", LocalDate.of(1990, 9, 21),jugadores, entrenadoresEquipos.entrenador2));
+        equipos.put("rain", new Equipo("rain", LocalDate.of(1940, 06, 19),jugadores, entrenadoresEquipos.entrenador3));
+        equipos.put("sun",new Equipo("sun", LocalDate.of(1968,05,28), jugadores, entrenadoresEquipos.entrenador4));
+        equipos.put("moon",new Equipo("moon", LocalDate.of(1981,03,07), jugadores, entrenadoresEquipos.entrenador5));
     }
 }
 

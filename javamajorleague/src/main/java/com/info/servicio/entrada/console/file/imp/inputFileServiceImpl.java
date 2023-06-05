@@ -1,14 +1,11 @@
 package com.info.servicio.entrada.console.file.imp;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.management.RuntimeErrorException;
-
 import org.apache.commons.io.FileUtils;
-
 import com.info.domain.Jugador;
 import com.info.servicio.entrada.console.file.inputFileService;
 
@@ -17,7 +14,7 @@ public class inputFileServiceImpl implements inputFileService {
         
         //inicializacion lista de jugadores
         List<Jugador> jugadores = new ArrayList<>();
-      /*   
+        
         try {
             // linea del archivo
             List<String> lineas = FileUtils.readLines(new File(rutaArchivo), StandardCharsets.UTF_8);
@@ -34,14 +31,15 @@ public class inputFileServiceImpl implements inputFileService {
                 int cantiadadDePartidos = Integer.parseInt(partes[5]);
                 boolean esCapitan = Boolean.parseBoolean(partes[6]);
                 int dorsal = Integer.parseInt(partes[7]);
-
+                Jugador jugador = new Jugador(nombre, apellido, altura, posicionQueJuega, cantidadDeGoles, cantiadadDePartidos, esCapitan, dorsal, null);
+                jugadores.add(jugador);
             }
 
 
 
-        } catch (IOException e) {
+        } catch (IOException | NullPointerException e) {
             throw new RuntimeException(e);
-        } */
-        return null;
+        }
+        return jugadores;
     }
 }

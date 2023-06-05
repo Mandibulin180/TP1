@@ -1,0 +1,5 @@
+gonzalo;delgado;1.7;delantero;100;10;true;19;rain
+jose;delgado;1.75;defensor;40;10;false;27;rain
+luciano;godoy;1.85;mediocampista;30;10;false;13;rain
+lucas;godoy;1.75;defensor;30;10;false;26;rain
+alejandro;ortiz;1.6;arquero;0;10;false;11;rain

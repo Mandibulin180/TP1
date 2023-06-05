@@ -14,15 +14,6 @@ import com.info.servicio.entrada.console.inputService;
 
 public class EquipoServiceImpl implements EquipoService {
     private final EntrenadorService entrenadorservice = new EntrenadorServiceImpl();
-    //ESTO SE DEBE BORRAR
-    public static void main(String[] args) {
-        EquipoService servquipo = new EquipoServiceImpl();
-        Equipo equipo = servquipo.crearEquipo();
-        System.out.println(equipo.getJugadores().get(0).toString());
-
-
-
-    }
     
     @Override
     public Equipo crearEquipo(){
@@ -89,7 +80,6 @@ public class EquipoServiceImpl implements EquipoService {
         for(Equipo equipo: listaDeEquipos){
             if(equipo.getNombre().equals(nombreEquipo)){
                 equipob = equipo;
-            }else {
             }
         }
         return equipob;

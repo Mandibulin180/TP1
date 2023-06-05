@@ -6,4 +6,6 @@ public interface entrenadoresEquipos {
     Entrenador entrenador1 = new Entrenador("jose", "cuervo", 43);
     Entrenador entrenador2 = new Entrenador("fernando", "alegre", 41);
     Entrenador entrenador3 = new Entrenador("hernan", "baggio", 30);
+    Entrenador entrenador4 = new Entrenador("hernan", "baggio", 30);
+    Entrenador entrenador5 = new Entrenador("hernan", "baggio", 30);
 }

@@ -10,11 +10,6 @@ import com.info.servicio.entrada.console.inputService;
 
 public class JugadorServiceImpl implements JugadorService {
     Scanner scanner=inputService.getScanner();
-    //esto se debe borrar
-    public static void main(String[] args) {
-        JugadorService jugador = new JugadorServiceImpl();
-        System.out.println(jugador.crearJugador().toString());
-    }
     
     @Override
     public Jugador crearJugador() {
@@ -70,7 +65,7 @@ public class JugadorServiceImpl implements JugadorService {
                     System.out.println("APELLIDO: "+Jugador.getApellido());
                     System.out.println("POSICION: "+Jugador.getPosicionQueJuega());
                     System.out.println("ES CAPITAN? "+Jugador.getEsCapitan());
-                    System.out.println("NOMBRE DE SU EQEUIPO: "+Jugador.getEquipo().getNombre());
+                    System.out.println("NOMBRE DE SU EQUIPO: "+Jugador.getEquipo().getNombre());
                     break;
                     
                 }else {

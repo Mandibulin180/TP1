@@ -6,18 +6,6 @@ import com.info.servicio.entrada.console.inputService;
 
 public class EntrenadorServiceImpl implements EntrenadorService {
     
-    public static void main(String[] args) {
-        // esta declaracion de service, guardarla en una variable y luego asignarla al objeto
-        EntrenadorService entrenadorayuda = new EntrenadorServiceImpl();
-        Entrenador entrenador = entrenadorayuda.crearEntrenador();
-        System.out.println(entrenador.getNombre());
-        System.out.println(entrenador.getApellido());
-        System.out.println(entrenador.getEdad());
-        
-
-    } 
-
-    
     @Override
     public Entrenador crearEntrenador(){
         Entrenador entrenador = new Entrenador();
