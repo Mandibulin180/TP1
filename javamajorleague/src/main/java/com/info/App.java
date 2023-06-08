@@ -1,8 +1,9 @@
 package com.info;
 
-import com.info.bootstrap.BootstrapData;
 import com.info.servicio.Menu.menu;
 import com.info.servicio.Menu.impl.menuImpl;
+import com.info.bootstrap.BootstrapData;
+
 public final class App {
     private App() {
     }

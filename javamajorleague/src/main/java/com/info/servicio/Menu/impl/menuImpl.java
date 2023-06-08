@@ -43,7 +43,7 @@ public class menuImpl implements menu{
         System.out.println("6_IMPORTAR LISTA DE JUGADORES DE UN EQUIPO DESDE UN ARCHIVO");
         System.out.println("7_EXPORTAR LISTA DE JUGADORES HACIA UN ARCHIVO");
         System.out.println("8_MOSTRAR TODOS LOS NOMBRES DE EQUIPOS DISPONIBLES");
-        System.out.println("8_SALIR");
+        System.out.println("9_SALIR");
         System.out.print("INGRESE QUE OPCIÓN DESEADA: ");
         int opcion = inputService.getScanner().nextInt();
         inputService.getScanner().nextLine();
